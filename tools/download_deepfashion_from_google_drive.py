@@ -23,21 +23,21 @@ def download_from_gdrive(dst_root, fn, gdrive_path, iszip=True):
   print("download {}.".format(fn))
 
 ## download data
-# https://drive.google.com/drive/folders/11wWszW1kskAyMIGJHBBZzHNKN3os6pu_
-download_from_gdrive(args.dataroot, "testM_lip", "1toeQwAe57LNPTy9EWGG0u1XfTI7qv6b1")
-download_from_gdrive(args.dataroot, "trainM_lip", "1OAsHXiyQRGCCZltWtBUj_y4xV8aBKLk5")
-download_from_gdrive(args.dataroot,"standard_test_anns.txt","19nJSHrQuoJZ-6cSl3WEYlhQv6ZsAYG-X",iszip=False)
+# # https://drive.google.com/drive/folders/11wWszW1kskAyMIGJHBBZzHNKN3os6pu_
+# download_from_gdrive(args.dataroot, "testM_lip", "1toeQwAe57LNPTy9EWGG0u1XfTI7qv6b1")
+# download_from_gdrive(args.dataroot, "trainM_lip", "1OAsHXiyQRGCCZltWtBUj_y4xV8aBKLk5")
+# download_from_gdrive(args.dataroot,"standard_test_anns.txt","19nJSHrQuoJZ-6cSl3WEYlhQv6ZsAYG-X",iszip=False)
 
-# DeepFashion-MultiModal https://github.com/yumingj/DeepFashion-MultiModal
-download_from_gdrive(args.dataroot, "images", "1U2PljA7NE57jcSSzPs21ZurdIPXdYZtN")
+# # DeepFashion-MultiModal https://github.com/yumingj/DeepFashion-MultiModal
+# download_from_gdrive(args.dataroot, "images", "1U2PljA7NE57jcSSzPs21ZurdIPXdYZtN")
 
-# https://drive.google.com/drive/folders/1BX3Bxh8KG01yKWViRY0WTyDWbJHju-SL
-download_from_gdrive(args.dataroot,"fasion-pairs-test.csv","12fZKGf0kIu5OX3mjC-C3tptxrD8sxm7x",iszip=False)
-download_from_gdrive(args.dataroot,"fasion-annotation-test.csv","1MxkVFFtNsWFshQp_TA7qwIGEUEUIpYdS",iszip=False)
-download_from_gdrive(args.dataroot,"fasion-annotation-train.csv","1CkINRpr4L7E-YCEbBE_RS-ainIHn8v3P",iszip=False)
-download_from_gdrive(args.dataroot,"fasion-pairs-train.csv","13FrzVtjo0bRFJZn3f5VrV2R0FSWHikNF",iszip=False)
-download_from_gdrive(args.dataroot,"test.lst","1yi7xg1nJ9Ts5RbA_WsKq5lDUCwrXwGyn",iszip=False)
-download_from_gdrive(args.dataroot,"train.lst","1sbIw7M-CpLlT9L1kQfkdami-IPoHHWpC",iszip=False)
+# # https://drive.google.com/drive/folders/1BX3Bxh8KG01yKWViRY0WTyDWbJHju-SL
+# download_from_gdrive(args.dataroot,"fasion-pairs-test.csv","12fZKGf0kIu5OX3mjC-C3tptxrD8sxm7x",iszip=False)
+# download_from_gdrive(args.dataroot,"fasion-annotation-test.csv","1MxkVFFtNsWFshQp_TA7qwIGEUEUIpYdS",iszip=False)
+# download_from_gdrive(args.dataroot,"fasion-annotation-train.csv","1CkINRpr4L7E-YCEbBE_RS-ainIHn8v3P",iszip=False)
+# download_from_gdrive(args.dataroot,"fasion-pairs-train.csv","13FrzVtjo0bRFJZn3f5VrV2R0FSWHikNF",iszip=False)
+# download_from_gdrive(args.dataroot,"test.lst","1yi7xg1nJ9Ts5RbA_WsKq5lDUCwrXwGyn",iszip=False)
+# download_from_gdrive(args.dataroot,"train.lst","1sbIw7M-CpLlT9L1kQfkdami-IPoHHWpC",iszip=False)
 
 # filter images (exclude training data and rename the files)
 if not os.path.exists(args.dataroot + "/test"):
